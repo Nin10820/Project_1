@@ -1,6 +1,6 @@
 <template>
-  <div class>
-    <nav id="navbar">
+  <div id="navbar">
+    <nav>
       <div class="logo">Niun108</div>
       <ul class="nav-menu">
         <li v-for="(link, index) in navbarLinks" :key="link + index">
@@ -48,23 +48,6 @@ export default {
     };
   },
   methods: {
-    scrollClass() {
-      console.log("a");
-    },
-    updateScroll() {
-      // this.scrollPosition = window.scrollY;
-      let position = window.scrollY;
-
-      if (position > 20) {
-        console.log("scrolled");
-        let el = document.getElementById("navbar");
-        el.classList.add("scrolled");
-      } else {
-        console.log("scroll");
-        let el = document.getElementById("navbar");
-        el.classList.remove("scrolled");
-      }
-    }
   },
   mounted() {
     window.addEventListener("scroll", this.updateScroll);
@@ -80,9 +63,7 @@ export default {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 nav {
-  position: fixed;
   width: 100%;
-  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,10 +89,7 @@ nav {
   }
 }
 
-nav.scrolled {
-  box-shadow: 0 0 18px -5px #919aa3;
-  transition: 0.5s;
-}
+
 
 .nav-menu,
 .nav-menu * {
