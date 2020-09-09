@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+input {
+    padding: 1.4em 0.8em !important;
+}
+
+.inline-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+.btn-primary {
+    background: #00c2db !important;
+    border-color: #00c2db !important;
+    padding: 0.3em 2em !important;
+    font-weight: bold;
+}
+
+.text-small {
+    font-size: 1em;
+    color: #919aa3;
+}
+
+.item-inline-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+}
+
+.btn-primary {
+    border: 2px solid #2fd4ec;
+    background: #2fd4ec;
+    color: white;
+    &:hover,
+    &:active,
+    &:focus {
+        background: #2fd4ec;
+        border: 2px solid #2fd4ec;
+        filter: brightness(90%);
+    }
+}
+
+.bg-opacity-black::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}

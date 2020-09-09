@@ -22,36 +22,36 @@ export default {
       navbarLinks: [
         {
           name: "Home",
-          path: "/"
+          path: "/",
         },
         {
           name: "About",
-          path: "/about"
+          path: "/about",
         },
         {
           name: "Shop",
-          path: "/shopping"
+          path: "/shopping",
         },
         {
           name: "Service",
-          path: "/service"
+          path: "/service",
         },
         {
           name: "Ship",
-          path: "/ship"
+          path: "/ship",
         },
         {
           name: "Review",
-          path: "/review"
-        }
-      ]
+          path: "/review",
+        },
+      ],
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap'); 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -67,7 +67,6 @@ nav {
   z-index: 1;
   border-radius: 5px;
 
-
   .logo {
     font-size: 2em;
     font-weight: 600;
@@ -82,7 +81,6 @@ nav {
     }
   }
 }
-
 
 .nav-menu,
 .nav-menu * {
