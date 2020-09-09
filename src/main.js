@@ -9,13 +9,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
+require('@/assets/styles/application.scss')
 
 AOS.init();
 
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  render: h => h(App)
+    router,
+    render: h => h(App)
 }).$mount('#app')
-

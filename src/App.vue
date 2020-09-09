@@ -9,7 +9,7 @@
 import Navbar from "./components/Navbar";
 export default {
   components: {
-    Navbar
+    Navbar,
   },
   methods: {
     updateScroll() {
@@ -25,19 +25,21 @@ export default {
         let el = document.getElementById("navbar");
         el.classList.remove("scrolled");
       }
-    }
+    },
   },
   mounted() {
     window.addEventListener("scroll", this.updateScroll);
     console.log("connect");
-  }
+  },
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Prompt", sans-serif;
 }
+
 #app {
   position: relative;
   width: 100%;
@@ -52,5 +54,4 @@ export default {
   box-shadow: 0 0 18px -5px #919aa3;
   transition: 0.5s;
 }
-
 </style>

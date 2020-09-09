@@ -339,7 +339,7 @@
             <div class="footer-brand">Niun108</div>
             <div class="sub">Stay at home! Buy everything</div>
           </div>
-          <div class="col-6 ">
+          <div class="col-6">
             <h4 class="text-right">Follow us</h4>
             <div class="social-icon">
               <div class="icon">
@@ -377,28 +377,12 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
-
-* {
-  font-family: "Poppins", sans-serif;
-}
-input {
-  padding: 1.4em 0.8em !important;
-}
-
-.inline-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0.5em;
-}
-
+<style lang="scss" scoped>
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 
 h2 {
@@ -407,8 +391,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5em;
-
   &::before {
     content: "";
     width: 70px;
@@ -417,7 +399,6 @@ h2 {
     bottom: 0;
     margin: 1em;
   }
-
   &::after {
     content: "";
     width: 70px;
@@ -427,26 +408,9 @@ h2 {
     margin: 1em;
   }
 }
-.btn-primary {
-  background: #00c2db !important;
-  border-color: #00c2db !important;
-  padding: 0.3em 2em !important;
-  font-weight: bold;
-}
-
-.text-small {
-  font-size: 1em;
-  color: #919aa3;
-}
-
-.item-inline-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1.5em;
-}
 
 .home {
-  margin-top: 4em;
+  margin-top: 1em;
 
   .portfolio {
     position: relative;
@@ -666,7 +630,7 @@ h2 {
 
       &__name {
         .main {
-          font-family: "Poppins", sans-serif;
+          font-family: "Prompt", sans-serif;
           color: #00c2db;
           filter: brightness(40%);
           padding-top: 0.5em;
@@ -674,7 +638,7 @@ h2 {
           font-weight: 600;
         }
         .sub {
-          font-family: "Poppins", sans-serif;
+          font-family: "Prompt", sans-serif;
           filter: brightness(40%);
           font-size: 0.9em;
           font-weight: 600;
@@ -716,7 +680,7 @@ h2 {
     .footer-brand {
       font-size: 2.5em;
       font-weight: 600;
-      font-family: "Poppins", sans-serif;
+      font-family: "Prompt", sans-serif;
       color: #34d4ea;
       filter: brightness(40%);
     }
@@ -729,7 +693,7 @@ h2 {
         align-items: center;
         width: 30px;
         height: 30px;
-        margin: 0 .2em;
+        margin: 0 0.2em;
         border-radius: 50%;
         background: #34d4ea;
         color: white;
