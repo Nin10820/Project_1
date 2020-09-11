@@ -5,7 +5,7 @@
     <section id="hero" class="d-flex align-items-center">
       <div class="portfolio row">
         <div class="col-lg-5 justify-content-center portfolio-main">
-          <h2 data-aos="fade-up" data-aso-delay="100">Stay at home</h2>
+          <h2 data-aos="fade-up" class="heading" data-aso-delay="100">Stay at home</h2>
           <h1 data-aos="fade-up" data-aso-delay="200">buy everything</h1>
           <div
             data-aos="fade-up"
@@ -96,7 +96,7 @@
 
     <!-- ======= Features Section ======= -->
     <section class="features container">
-      <h2>Features</h2>
+      <h2 class="heading">Features</h2>
       <p
         class="text-center"
       >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit repellat dolore id tempora saepe modi est atque minima laboriosam. Ipsum at, iure fugiat architecto dignissimos quibusdam ea quia hic numquam.</p>
@@ -139,12 +139,12 @@
 
     <!-- ======= Service Section ======= -->
     <section class="service">
-      <h2>Service</h2>
+      <h2 class="heading">Service</h2>
       <p
         class="text-center pb-5 container"
       >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nam, dolor ea ullam consectetur fuga Iste molestiae praesentium possimus, ullam totam eos quisquam dolores fugiat doloribus eligendi maiores dignissimos.</p>
       <div class="container">
-        <div class="item-inline-3">
+        <div class="inline-3">
           <div class="service-item">
             <div class="service-item__logo">
               <i class="fas fa-search"></i>
@@ -229,7 +229,7 @@
     <!-- ======= Testimonials Section ======= -->
     <section class="testimonials">
       <div class="container">
-        <h2>Testimonials</h2>
+        <h2 class="heading">Testimonials</h2>
         <VueSlickCarousel :arrows="true" :dots="true" :autoplay="true">
           <div class="testimonial-item text-center">
             <div class="testimonial-item__img">
@@ -292,7 +292,7 @@
 
     <!-- ======= Contact Section ======= -->
     <section class="contact container">
-      <h2>Contact</h2>
+      <h2 class="heading">Contact</h2>
       <div class="contact-main row">
         <div class="col-md-4 contact-main__info inline-2">
           <div class="contact-icon">
@@ -383,30 +383,6 @@ h2,
 h3,
 h4 {
   font-family: "Prompt", sans-serif;
-}
-
-h2 {
-  padding: 1em;
-  padding-bottom: 0.6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &::before {
-    content: "";
-    width: 70px;
-    height: 3px;
-    background: #aabbd7;
-    bottom: 0;
-    margin: 1em;
-  }
-  &::after {
-    content: "";
-    width: 70px;
-    height: 3px;
-    background: #aabbd7;
-    bottom: 0;
-    margin: 1em;
-  }
 }
 
 .home {
@@ -520,6 +496,7 @@ h2 {
       padding: 4em 2em;
       background: white;
       text-align: center;
+      transition: 0.5s;
       box-shadow: 0 0 20px -12px #919aa3;
 
       &__logo {

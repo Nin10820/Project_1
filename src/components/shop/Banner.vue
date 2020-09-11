@@ -29,7 +29,7 @@
           <div class="banner bg-opacity-black bg-3">
             <h1 class="pb-3">Rau sạch thủy canh</h1>
             <p
-              class="px-5"
+              class="px-5 "
             >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam numquam consequuntur, r adipisicing elit. Voluptate fugit iure nulla aliquam distinctio aut adipisci voluptate</p>
             <button class="btn-primary btn">Buy now</button>
           </div>
@@ -46,15 +46,17 @@ export default {
 </script>
 <style lang="scss">
 .banner {
-  width: 100%;
   background-attachment: fixed;
   background-clip: initial;
   background-origin: initial;
   background-repeat: no-repeat;
   background-size: cover;
+
   position: relative;
+  width: 100%;
+  padding: 15em 20em;
   z-index: 0;
-  padding: 13em 20em;
+  
   color: white;
   text-align: center;
   h1 {
